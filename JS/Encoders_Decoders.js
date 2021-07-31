@@ -4,9 +4,9 @@ const icon = document.querySelector('.icon');
 const cross= document.querySelector('#cross');
 const line= document.querySelector('#line');
 const slidebar=document.querySelector('.slide_bar');
-slidebar.style.display='none';
-cross.style.display='none';
-line.style.display='';
+
+line.style.display='none';
+
 functions = {
     "URL Percent Encoding": (value) => {
 

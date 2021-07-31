@@ -6,9 +6,9 @@ const button2 = document.querySelector('#button2');
 const cross= document.querySelector('#cross');
 const line= document.querySelector('#line');
 const slidebar=document.querySelector('.slide_bar');
-slidebar.style.display='none';
-cross.style.display='none';
-line.style.display='';
+
+line.style.display='none';
+
 function componentToHex(c) {
     c = Number(c);
     let hex = c.toString(16);

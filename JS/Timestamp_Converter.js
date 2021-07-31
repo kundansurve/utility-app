@@ -4,9 +4,9 @@ window.onload=()=>{
 const cross= document.querySelector('#cross');
 const line= document.querySelector('#line');
 const slidebar=document.querySelector('.slide_bar');
-slidebar.style.display='none';
-cross.style.display='none';
-line.style.display='';
+
+line.style.display='none';
+
 function toHumanDate(epoch) {
     const myDate = new Date(epoch * 1000);
     return myDate.toGMTString() + "\n" + myDate.toLocaleString();

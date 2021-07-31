@@ -69,7 +69,7 @@ nav {
         margin-left: 20%;
     }
     .slide_bar {
-        display: flex;
+        display: '';
         flex-direction: column;
         background-color: #001242;
         position: fixed;
