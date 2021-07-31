@@ -1,3 +1,12 @@
+window.onload=()=>{
+    const button = document.querySelector('button');
+const icon = document.querySelector('.icon');
+const cross= document.querySelector('#cross');
+const line= document.querySelector('#line');
+const slidebar=document.querySelector('.slide_bar');
+slidebar.style.display='none';
+cross.style.display='none';
+line.style.display='';
 functions = {
     "URL Percent Encoding": (value) => {
 
@@ -44,18 +53,25 @@ functions = {
         return hash;
     }
 }
-const button = document.querySelector('button');
+
+
+cross.onclick = () =>{
+    //slidebar.style.display='';console.log("displayed");
+        slidebar.style.display='none';
+        cross.style.display='none';
+        line.style.display='';
+}
+line.onclick=()=>{
+    slidebar.style.display='';
+    cross.style.display='';
+    line.style.display='none';
+}
 button.onclick = event => {
     let operation = document.querySelector('input[id="operation"]');
-    /*for (const s of operation) {
-        if (s.checked) {
-            operation = s.value;
-            break;
-        }
-    }*/
-    //var decodedStringBtoA = 'Hello World!';
+    
 
     // Encode the String
     const obj = document.querySelector('#URL_input');
     document.querySelector('#URL_output').textContent = functions[operation.value](obj.value);
+}
 }

@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <nav>Hello welcome to Utility CLI APP</nav>
+    <nav><img src="../icons8-menu-24.png" id ="line" class="icon"/><img src="../icons8-close-window-50.png" id="cross" class="icon"/>Hello welcome to Utility CLI APP</nav>
 
 
     <section id="main">
-
         <div class="slide_bar">
-            <li><a class="options" href="./index.html">Home</a></li>
+            <i class="fa fa-bars"></i>
+            <li><a class="options" href="../index.html">Home</a></li>
             <li style="background-color: #000022;"><a class="options" href="./Encoders_Decoders.html">Encoder / Decoder</a></li>
             <li><a class="options" href="./RGB_HEX_Converter.html">RGb to hex Convertor</a></li>
             <li><a class="options" href="./Unit_Converters.html">Unit Convertor</a></li>
@@ -28,7 +28,7 @@
             <div class="heading">
                 <h1>Encoder / Decoder :</h1>
                 <p></p>
-                <h3>Select the option:</h3>
+                <label for="operation">Select</label>
                 <input type="text" id="operation" list="operations">
                 <datalist id="operations">
                     <option value="URL Percent Encoding">

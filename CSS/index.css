@@ -22,7 +22,6 @@
         position: fixed;
         top: 0px;
         left: 0px;
-        font-size: 30px;
         color: #ffff;
         z-index: 2;
         margin-bottom: 10%;
@@ -59,9 +58,12 @@
             flex-direction: column;
             justify-content: center;
         }
+        nav{
+            font-size: 20px;
+        }
     }
     
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: 500px) {
         .row {
             display: flex;
             flex-direction: row;
