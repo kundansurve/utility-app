@@ -112,6 +112,7 @@ label {
         z-index:3;
     }
     .Encoder_Decoder {
+        margin: 50px auto auto auto;
         display: flex;
         position: absolute;
         left: 2%;

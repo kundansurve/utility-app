@@ -127,6 +127,7 @@ label {
         margin-top: 10%;
     }
     .Encoder_Decoder {
+        margin: 50px auto auto auto;
         display: flex;
         position: absolute;
         left: 20%;
